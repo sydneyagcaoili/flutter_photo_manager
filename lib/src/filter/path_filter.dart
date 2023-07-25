@@ -240,7 +240,7 @@ extension PMDarwinAssetCollectionSubtypeExt on PMDarwinAssetCollectionSubtype {
         return 218;
       case PMDarwinAssetCollectionSubtype.any:
         // pow(2, 63) - 1;
-        return 9223372036854775807;
+        return BigInt.from(2).pow(63).toInt() - 1;
     }
   }
 
